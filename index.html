@@ -11,16 +11,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York</h1>
+            <h1 id="city">New York</h1>
             <ul>
-              <li>Friday 05:00</li>
-              <li>Clear</li>
+              <li>Last updated: <span id="date">Friday 05:00</span></li>
+              <li id="description">Clear</li>
             </ul>
           </div>
 
@@ -31,9 +32,10 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
                   alt="Clear"
                   class="float-left"
+                  id="icon"
                 />
                 <span class="float-left">
-                  <strong>12</strong>
+                  <strong id="temperature">12</strong>
                   <small class="units">
                     ℃ |<a href="" style="text-decoration: none"> ℉</a></small
                   >
@@ -43,9 +45,8 @@
 
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2 km/h</li>
+                <li>Humidity: <span id="humidity">73%</span></li>
+                <li>Wind: <span id="wind">2 km/h</span></li>
               </ul>
             </div>
           </div>
@@ -60,6 +61,6 @@
         >
       </div>
     </div>
-    <script src=""></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

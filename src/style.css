@@ -25,6 +25,10 @@ li {
   padding: 0;
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
+
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
