@@ -17,6 +17,22 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-primary w-100" />
+              </div>
+            </div>
+          </form>
           <div class="overview">
             <h1 id="city">New York</h1>
             <ul>
@@ -28,12 +44,7 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
-                  alt="Clear"
-                  class="float-left"
-                  id="icon"
-                />
+                <img src="" class="float-left" id="icon" />
                 <span class="float-left">
                   <strong id="temperature">12</strong>
                   <small class="units">
