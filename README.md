@@ -1,2 +1,2 @@
 # vanilla-weather-app
- Weather Application
+A user-friendly weather app that provides real-time weather updates for any city you search for. With just a few clicks, you can access the current weather conditions, including temperature, humidity, weather description, and wind conditions. It also shows the weather forecast for the next five days, giving you the ability to plan ahead and stay prepared for any weather changes.
